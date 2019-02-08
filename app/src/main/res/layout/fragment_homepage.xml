@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homepage_background"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swlTransformersList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llStartSimulation"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.aequilibrium.transformersbattle.general.view.PagingRecyclerView
+                android:id="@+id/rvTransformersList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:visibility="gone"/>
+
+            <include
+                android:id="@+id/vEmpty"
+                layout="@layout/view_empty_transformers_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/llStartSimulation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llCreateTransformer"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/general_margin_20px"
+            android:layout_height="@dimen/general_margin_20px"
+            android:src="@drawable/general_start_simulation"
+            android:tint="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/general_margin_40px"
+            android:layout_marginLeft="@dimen/general_margin_10px"
+            android:gravity="center"
+            android:text="@string/homepage_start_simulation_title"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llCreateTransformer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/design_default_color_primary"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/general_margin_20px"
+            android:layout_height="@dimen/general_margin_20px"
+            android:src="@drawable/general_create_transformer" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/general_margin_40px"
+            android:layout_marginLeft="@dimen/general_margin_10px"
+            android:gravity="center"
+            android:text="@string/homepage_create_transformer"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

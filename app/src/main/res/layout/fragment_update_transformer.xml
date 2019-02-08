@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/update_transformer_background" >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/general_margin_70px"
+        android:layout_marginBottom="-13dp"
+        android:clipToPadding="true"
+        app:cardBackgroundColor="@color/colorLightGrey"
+        app:cardCornerRadius="13dp"
+        app:cardElevation="0dp"
+        app:cardPreventCornerOverlap="false">
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="@dimen/general_margin_30px"
+            android:layout_height="@dimen/general_margin_30px"
+            android:layout_gravity="right"
+            android:tint="@color/colorAccent"
+            android:paddingRight="@dimen/general_margin_10px"
+            android:paddingTop="@dimen/general_margin_10px"
+            android:src="@drawable/general_close" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/textsize_15sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/general_margin_120px"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsize_15sp"
+                    android:gravity="center"
+                    android:hint="@string/update_transformer_name_hint"
+                    android:singleLine="true"/>
+
+                <LinearLayout
+                    android:id="@+id/llTeam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvTeamTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/transformers_item_team" />
+
+                    <TextView
+                        android:id="@+id/tvTeam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/general_margin_10px"
+                        android:layout_height="@dimen/general_margin_10px"
+                        android:src="@drawable/general_picker" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/llStrength"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvStrengthTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/transformers_item_strength" />
+
+                        <TextView
+                            android:id="@+id/tvStrength"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"/>
+
+                        <ImageView
+                            android:layout_width="@dimen/general_margin_10px"
+                            android:layout_height="@dimen/general_margin_10px"
+                            android:src="@drawable/general_picker" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llIntelligence"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvIntelligenceTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/transformers_item_intelligence" />
+
+                        <TextView
+                            android:id="@+id/tvIntelligence"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"/>
+
+                        <ImageView
+                            android:layout_width="@dimen/general_margin_10px"
+                            android:layout_height="@dimen/general_margin_10px"
+                            android:src="@drawable/general_picker" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llSpeed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvSpeedTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/transformers_item_speed" />
+
+                        <TextView
+                            android:id="@+id/tvSpeed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"/>
+
+                        <ImageView
+                            android:layout_width="@dimen/general_margin_10px"
+                            android:layout_height="@dimen/general_margin_10px"
+                            android:src="@drawable/general_picker" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llEndurance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvEnduranceTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/transformers_item_Endurance" />
+
+                        <TextView
+                            android:id="@+id/tvEndurance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"/>
+
+                        <ImageView
+                            android:layout_width="@dimen/general_margin_10px"
+                            android:layout_height="@dimen/general_margin_10px"
+                            android:src="@drawable/general_picker" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/llRank"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvRankTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/transformers_item_rank" />
+
+                        <TextView
+                            android:id="@+id/tvRank"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"/>
+
+                        <ImageView
+                            android:layout_width="@dimen/general_margin_10px"
+                            android:layout_height="@dimen/general_margin_10px"
+                            android:src="@drawable/general_picker" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llCourage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvCourageTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/transformers_item_courage" />
+
+                        <TextView
+                            android:id="@+id/tvCourage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"/>
+
+                        <ImageView
+                            android:layout_width="@dimen/general_margin_10px"
+                            android:layout_height="@dimen/general_margin_10px"
+                            android:src="@drawable/general_picker" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llFirepower"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvFirepowerTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/transformers_item_firepower" />
+
+                        <TextView
+                            android:id="@+id/tvFirepower"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"/>
+
+                        <ImageView
+                            android:layout_width="@dimen/general_margin_10px"
+                            android:layout_height="@dimen/general_margin_10px"
+                            android:src="@drawable/general_picker" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llSkill"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvSkillTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/transformers_item_skill" />
+
+                        <TextView
+                            android:id="@+id/tvSkill"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"/>
+
+                        <ImageView
+                            android:layout_width="@dimen/general_margin_10px"
+                            android:layout_height="@dimen/general_margin_10px"
+                            android:src="@drawable/general_picker" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llConfirmCreation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/general_margin_20px"
+                android:background="@color/design_default_color_primary"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/general_margin_20px"
+                    android:layout_height="@dimen/general_margin_20px"
+                    android:src="@drawable/general_confirm" />
+
+                <TextView
+                    android:id="@+id/tvConfirmCreation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/general_margin_40px"
+                    android:layout_marginLeft="@dimen/general_margin_10px"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:text="@string/update_transformer" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">TransformersBattle</string>
+
+    <string name="general_error">Error</string>
+    <string name="general_confirm">OK</string>
+
+    <string name="sharedpreference_name">matrix</string>
+
+    <string name="homepage_no_results_title">NO TRANSFORMERS DETECTED</string>
+    <string name="homepage_no_results_subtitle">0 transformers found in simulation</string>
+    <string name="homepage_start_simulation_title">START SIMULATION</string>
+    <string name="homepage_create_transformer">CREATE TRANSFORMER</string>
+    <string name="homepage_delete_transformer_success">TRANSFORMER DELETED</string>
+    <string name="homepage_empty_list_warning">NO TRANSFORMERS ADDED</string>
+    <string name="homepage_battle_tie">BATTLE RESULT: DRAW</string>
+    <string name="homepage_battle_autobots_victory">BATTLE RESULT: AUTOBOTS VICTORY</string>
+    <string name="homepage_battle_decepticons_victory">BATTLE RESULT: DECEPTICONS VICTORY</string>
+
+    <string name="transformers_item_team">Team: </string>
+    <string name="transformers_item_strength">Strength: </string>
+    <string name="transformers_item_intelligence">Intelligence: </string>
+    <string name="transformers_item_speed">Speed: </string>
+    <string name="transformers_item_Endurance">Endurance: </string>
+    <string name="transformers_item_rank">Rank: </string>
+    <string name="transformers_item_courage">Courage: </string>
+    <string name="transformers_item_firepower">Firepower: </string>
+    <string name="transformers_item_skill">Skill: </string>
+    <string name="transformers_item_overall">Overall: </string>
+
+    <string name="update_transformer_name_hint">ENTER NAME</string>
+    <string name="update_transformer">CONFIRM CREATION</string>
+    <string name="update_transformer_creation_success">CREATION SUCCESSFUL</string>
+    <string name="update_transformer_update_success">UPDATE SUCCESSFUL</string>
+    <string name="update_transformer_confirm">CONFIRM UPDATE</string>
+
+</resources>

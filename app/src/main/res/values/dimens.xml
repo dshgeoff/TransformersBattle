@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="general_margin_5px">5dp</dimen>
+    <dimen name="general_margin_10px">10dp</dimen>
+    <dimen name="general_margin_15px">15dp</dimen>
+    <dimen name="general_margin_20px">20dp</dimen>
+    <dimen name="general_margin_30px">30dp</dimen>
+    <dimen name="general_margin_40px">40dp</dimen>
+    <dimen name="general_margin_70px">70dp</dimen>
+    <dimen name="general_margin_120px">120dp</dimen>
+
+    <dimen name="textsize_15sp">15sp</dimen>
+</resources>
